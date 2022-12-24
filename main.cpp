@@ -63,25 +63,7 @@ int ceil_div(int a, int b){return a % b == 0 ? a / b : a / b + 1;}
 bool sortbylen(string &s1,string &s2){return s1.size() < s2.size();}
 
 void solve(){
-    int n,q;
-    cin>>n>>q;
-    vector<vector<int>> dp(1001,vector<int>(1001,0)),arr(1001,vector<int>(1001,0));
-    fr(i,0,n){
-        int h,w;
-        cin>>h>>w;
-        arr[h][w]+=h*w;
-    }
-    for(int i=1;i<=1000;i++){
-        for(int j=1;j<=1000;j++){
-            dp[i][j] = arr[i][j]+dp[i-1][j]+dp[i][j-1]-dp[i-1][j-1];
-        }
-    }
-    while(q--){
-        int hs,ws,hb,wb,ans=0;
-        cin>>hs>>ws>>hb>>wb;
-        int sum = dp[hb-1][wb-1]-dp[hb-1][ws]-dp[hs][wb-1]+dp[hs][ws];
-        cout<<sum<<endl;
-    }
+    
 }
 int32_t main(void)
 {
