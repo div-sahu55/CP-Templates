@@ -1,7 +1,4 @@
 #include<bits/stdc++.h>
-// #include<ext/pb_ds/assoc_container.hpp>
-// #include<ext/pb_ds/tree_policy.hpp>
-// using namespace __gnu_pbds;
 using namespace std;
 #pragma GCC optimize("O3,unroll-loops")
 #pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
@@ -16,7 +13,6 @@ using namespace std;
 #define umap unordered_map<int,int,custom_hash>
 #define vl vector<int> 
 #define endl '\n'
-// typedef tree<int, null_type,greater_equal<int>, rb_tree_tag, tree_order_statistics_node_update > pbds;
 const int MOD =  998244353,inf = 1e18 + 5;
 
 #ifndef ONLINE_JUDGE
