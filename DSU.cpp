@@ -40,7 +40,7 @@ public:
     }
 };
 int main(){
-	int ;
+	int n;
 	cin>>n;
 	dsu obj(n);
 }
