@@ -31,12 +31,14 @@ public:
         int yset = find(y);
  
         if (xset == yset){
-            return;
+            return false;
         }
  
         if(size[xset]<size[yset])swap(xset,yset);
         parent[yset] = xset;
         size[xset]+=size[yset];
+
+	return true;
     }
 };
 int main(){
