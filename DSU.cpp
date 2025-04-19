@@ -24,7 +24,7 @@ public:
         return parent[x];
     }
  
-    void unite(int x, int y)
+    bool unite(int x, int y)
     {
 	//Unites two sets and makes x the parent of y.
         int xset = find(x);
